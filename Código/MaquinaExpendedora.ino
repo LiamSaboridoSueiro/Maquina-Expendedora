@@ -10,10 +10,6 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
-#include <Thread.h>
-#include <StaticThreadController.h>
-#include <ThreadController.h>
-#include <TimerOne.h>
 #include <ezButton.h>
 #include <avr/wdt.h>
 
