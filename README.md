@@ -1,4 +1,6 @@
-# Maquina-Expendedora
+# Maquina Expendedora
+
+Este repositorio presenta un proyecto de Controlador de Máquina Expendedora basado en Arduino UNO. El controlador incorpora diversas funcionalidades, desde el arranque del sistema hasta la administración de la máquina, utilizando componentes del kit Arduino.
 
 ## Bibliotecas utilizadas
 
