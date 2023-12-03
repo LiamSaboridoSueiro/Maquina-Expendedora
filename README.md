@@ -144,3 +144,7 @@ void admin() {
   wdt_reset();
 }
 ```
+
+## Documentación
+
+Consulte la [documentación](https://www.arduino.cc/reference/en/) oficial de Arduino para obtener información detallada sobre las funciones y la programación en Arduino.
