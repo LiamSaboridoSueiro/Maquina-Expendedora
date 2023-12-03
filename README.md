@@ -44,3 +44,6 @@ Diagrama del circuito en Fritzing para una representación visual detallada del 
 
 Ver el video del circuito en acción para obtener una visión práctica y detallada de cómo opera el controlador de la máquina expendedora.
 
+[![Alt text](https://img.youtube.com/vi/FhtrVg4GZSw/0.jpg)](https://www.youtube.com/watch?v=FhtrVg4GZSw)
+
+
