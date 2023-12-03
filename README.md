@@ -48,6 +48,34 @@ Ver el video del circuito en acción para obtener una visión práctica y detall
 
 [![Alt text](https://img.youtube.com/vi/FhtrVg4GZSw/0.jpg)](https://www.youtube.com/watch?v=FhtrVg4GZSw)
 
+## Descripción
+
+He utilizado una máquina de estados para organizar y controlar el flujo de ejecución de la máquina expendedora de manera modular. Esto facilita la gestión de diferentes estados de operación (Arranque, Servicio, Administración) de forma estructurada, simplificando el mantenimiento y la comprensión del código.
+
+Funciones principales:
+
+● setup(): Configuración inicial de pines, sensores, LCD y la interrupción del botón.
+
+● loop(): Bucle principal que gestiona los diferentes estados de la máquina (Arranque, Servicio, Administración).
+
+● start_up(): Estado de arranque que parpadea los LEDs y transita al estado de Servicio.
+
+● service(): Estado de servicio que muestra información en la pantalla LCD y realiza acciones según la interacción del usuario.
+
+● check_distance(): Función para medir la distancia utilizando el sensor de ultrasonido.
+
+● display_products(): Muestra los productos en la pantalla y permite al usuario seleccionar uno.
+
+● read_joystick(): Lee la entrada del joystick y realiza acciones según la dirección o el botón presionado.
+
+● admin(): Estado de administración que permite al usuario realizar diversas acciones administrativas.
+
+● admin_temperature(), admin_distance(), admin_counter(), admin_modifyPrices(): Funciones para las acciones administrativas específicas.
+
+● buttonISR(): Manejador de la interrupción del botón que registra la duración del botón presionado.
+
+El código implementa funciones para la interacción con el usuario, la administración de productos y la visualización de información en la pantalla LCD. Además, utiliza un watchdog timer para evitar bloqueos y garantizar la operación segura del sistema.
+
 ## WatchDog
 
 El código utiliza el Watchdog Timer (Temporizador de Vigilancia) de AVR para evitar bloqueos o fallas en el sistema. El Watchdog se configura para un tiempo de espera de 8 segundos, y se reinicia periódicamente durante el arranque y otras operaciones críticas para prevenir reinicios no deseados. Ayuda a mejorar la estabilidad y la resistencia del sistema.
